@@ -28,6 +28,8 @@ VECTOR = 8
 LIST = 9
 MAP = 10
 
+TYPECODEFIX = 50
+
 # Application-specific types:
 PICKLE = 100
 BYTESTRING = 101
@@ -193,6 +195,7 @@ def classes():
             VECTOR: read_vector,
             LIST: read_list,
             MAP: read_map,
+            TYPECODEFIX: read_bytes,
             PICKLE: read_pickle,
             BYTESTRING: read_bytestring,
             MARKER: read_marker
